@@ -7,7 +7,6 @@ import { Octokit } from '@octokit/action'
  */
 
 /* To run this graphql to get 
-gh api graphql -F repo_owner='PPROGroup' -F repo_name='pl-b-girolink'  -F environment='prod' -f query='
 query ($repo_owner: String!, $repo_name: String!, $environment: String!) {
   repository(owner: $repo_owner, name: $repo_name) {
     deployments(environments: [$environment], first: 10, orderBy: { field: CREATED_AT, direction: DESC }) {
