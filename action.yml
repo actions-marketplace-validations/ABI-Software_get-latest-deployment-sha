@@ -1,6 +1,6 @@
-name: 'Latest deployment sha'
+name: 'Get latest deployment sha'
 description: 'Get sha of latest active deployment'
-author: 'Nithin'
+author: 'Alan Wu'
 branding:
   icon: box
   color: purple
@@ -24,7 +24,7 @@ inputs:
 # Define your outputs here.
 outputs:
   sha:
-    description: 'Your output description here'
+    description: 'Latest active sha of the specified deployment environment'
 
 runs:
   using: node20
