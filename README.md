@@ -39,7 +39,7 @@ jobs:
       id: latest-deployment-sha
       uses: ABI-Software/get-latest-deployment-sha@v1.0.0
       with:
-        repo_owner: vrnithinkumar
+        repo_owner: ABI-Sofeware
         repo_name: latest-deployment-sha
         environment: production
       env:
