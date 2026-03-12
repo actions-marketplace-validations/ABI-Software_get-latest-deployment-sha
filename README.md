@@ -37,7 +37,7 @@ jobs:
 
     - name: Get sha of latest deployment in main branch
       id: latest-deployment-sha
-      uses: vrnithinkumar/latest-deployment-sha@v0.0.1
+      uses: ABI-Software/get-latest-deployment-sha@v1.0.0
       with:
         repo_owner: vrnithinkumar
         repo_name: latest-deployment-sha
