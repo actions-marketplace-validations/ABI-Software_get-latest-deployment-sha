@@ -3,6 +3,8 @@
 [![GitHub Super-Linter](https://github.com/vrnithinkumar/latest-deployment-sha/actions/workflows/linter.yml/badge.svg)](https://github.com/super-linter/super-linter)
 ![CI](https://github.com/vrnithinkumar/latest-deployment-sha/actions/workflows/ci.yml/badge.svg)
 
+This action is based on the action created [here](https://github.com/vrnithinkumar/latest-deployment-sha), the only difference is that this action do not check against ref.name against the branch which is causing our Heroku deployments some issue.
+
 Use this action to get the commit SHA of latest active deployment in a Github repository. 
 
 **NOTE:** 
@@ -49,3 +51,6 @@ jobs:
 ```
 # License
 The scripts and documentation in this project are released under the [MIT License](LICENSE)
+
+# Acknowledgements
+This script is forked from https://github.com/vrnithinkumar/latest-deployment-sha, thanks for the development.
