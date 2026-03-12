@@ -29674,7 +29674,7 @@ query ($repo_owner: String!, $repo_name: String!, $environment: String!) {
         };
         const data = await octokit.graphql(query, variables);
         const nodes = data.repository.deployments.nodes;
-        const activeDeployments = nodes.filter((node) => node.ref.name === branch && node.state === 'ACTIVE');
+        const activeDeployments = nodes.filter((node) => node.state === 'ACTIVE');
         if (activeDeployments.length === 0) {
             core.setFailed(`Could not find any active deployements in latest ${MAX_DEPLOYEMENTS_TO_FETCH}, for '${owner}/${name}' for env '${env}' in the branch '${branch}'`);
         }
